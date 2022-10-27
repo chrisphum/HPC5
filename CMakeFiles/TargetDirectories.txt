@@ -1,0 +1,5 @@
+/home/chris/Desktop/hw5/CMakeFiles/sobel_cpu.dir
+/home/chris/Desktop/hw5/CMakeFiles/sobel_cpu_omp_offload.dir
+/home/chris/Desktop/hw5/CMakeFiles/sobel_gpu.dir
+/home/chris/Desktop/hw5/CMakeFiles/edit_cache.dir
+/home/chris/Desktop/hw5/CMakeFiles/rebuild_cache.dir
