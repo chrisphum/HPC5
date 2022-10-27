@@ -1,0 +1,30 @@
+chrishuy@cgpu18:~/hw5/HPC5> nvprof -m sm_efficiency ./sobel_cpu_omp_offload
+==31512== NVPROF is profiling process 31512, command: ./sobel_cpu_omp_offload
+ Read data from the file ./data/zebra-gray-int8-4x 
+Libomptarget device 0 info: OpenMP Host-Device pointer mappings after block at unknown:0:0:
+Libomptarget device 0 info: Host Ptr           Target Ptr         Size (B) RefCount Declaration
+Libomptarget device 0 info: 0x00001555168c6010 0x00001554e8000000 146393408 1        unknown at unknown:0:0
+Libomptarget device 0 info: 0x000015551f463010 0x00001554f2000000 146393408 1        unknown at unknown:0:0
+Libomptarget device 0 info: 0x00007fffffffb1d8 0x00001554fac00200 4        1        unknown at unknown:0:0
+Libomptarget device 0 info: 0x00007fffffffb1dc 0x00001554fac00000 4        1        unknown at unknown:0:0
+Libomptarget device 0 info: 0x00007fffffffb1e0 0x00001554fac00600 36       1        unknown at unknown:0:0
+Libomptarget device 0 info: 0x00007fffffffb210 0x00001554fac00400 36       1        unknown at unknown:0:0
+Libomptarget device 0 info: OpenMP Host-Device pointer mappings after block at unknown:0:0:
+Libomptarget device 0 info: Host Ptr           Target Ptr         Size (B) RefCount Declaration
+Libomptarget device 0 info: 0x00001555168c6010 0x00001554e8000000 146393408 1        unknown at unknown:0:0
+Libomptarget device 0 info: 0x000015551f463010 0x00001554f2000000 146393408 1        unknown at unknown:0:0
+Libomptarget device 0 info: 0x00007fffffffb1d8 0x00001554fac00200 4        1        unknown at unknown:0:0
+Libomptarget device 0 info: 0x00007fffffffb1dc 0x00001554fac00000 4        1        unknown at unknown:0:0
+Libomptarget device 0 info: 0x00007fffffffb1e0 0x00001554fac00600 36       1        unknown at unknown:0:0
+Libomptarget device 0 info: 0x00007fffffffb210 0x00001554fac00400 36       1        unknown at unknown:0:0
+ Elapsed time is : 0.466463 
+ Wrote the output file ./data/out_cpu_omp.dat 
+==31512== Profiling application: ./sobel_cpu_omp_offload
+==31512== Profiling result:
+==31512== Metric result:
+Invocations                               Metric Name                        Metric Description         Min         Max         Avg
+Device "Tesla V100-SXM2-16GB (0)"
+    Kernel: __omp_offloading_37_fa31bbb__Z18do_sobel_filteringPfS_ii_l103
+          1                             sm_efficiency                   Multiprocessor Activity      99.80%      99.80%      99.80%
+chrishuy@cgpu18:~/hw5/HPC5> 
+
