@@ -113,12 +113,19 @@ sobel_kernel_gpu(float *s,  // source image pixels
    int var = (blockIdx.x * blockDim.x) + threadIdx.x;
    int stride = (blockDim.x * gridDim.x);
    int index;
-  (var >= (ncols+1) ) ? index=var : index=var+stride;
+//  (var >= (ncols+1) ) ? index=var : index=var+stride;
    for (int i=index; i < ((ncols*nrows) - ncols -1); i += stride) {
      //  (index >= (ncols+1)) ? index=index : index += stride;
-      float block[] = { s[i-ncols-1] , s[i-ncols], s[i-ncols+1] , s[i-1], s[i], s[i+1], s[i+ncols-1], s[i+ncols], s[i+ncols+1] };
-      d[i] = sobel_filtered_pixel(block, 5, 5, ncols, nrows, gx, gy);
-  	//std::cout << sobel_filtered_pixel(block, 5, 5, ncols, nrows, gx, gy) << std::endl;
+      float block[] = { ((i-ncols-1)   >= 0 ? s[i-ncols-1]  : 0f,
+                        ((i-ncols)     >= 0 ? s[i-ncols]    : 0f,
+                        ((i-ncols+1)   >= 0 ? s[i-ncols+1]  : 0f,
+                        (i-1)          >= 0 ? s[i-1]        : 0f,
+                        (i)            >= 0 ? s[i]          : 0f,
+                        (i+1)          >= 0 ? s[i+1]        : 0f,
+                        ((i+ncols-1)   >= 0 ? s[i+ncols-1]  : 0f,
+                        ((i+ncols)     >= 0 ? s[i+ncols]    : 0f,
+                        ((i+ncols+1)   >= 0 ? s[i+ncols+1]  : 0f };
+   d[i] = sobel_filtered_pixel(block, 5, 5, ncols, nrows, gx, gy);
 
    }
 
