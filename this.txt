@@ -1,14 +1,17 @@
 #!/bin/bash
 
+export LIBOMPTARGET_INFO=4
+
 for BLOCKS in 1 4 16 64 256 1024 4096 # loop over problem sizes
    do 
         for THREADS in 32 64 128 256 512 1024
-        do
-            echo "BLOCKS" >> output.txt
-            echo $BLOCKS >> output.txt
-            echo "THREADS" >> output.txt
-            echo $THREADS >> output.txt
-            nvprof ./sobel_gpu $BLOCKS $THREADS >> output.txt
+        do	
+		echo "BLOCKS $BLOCKS"
+		echo "THREADS $THREADS"
+            nvprof -m sm_efficiency ./sobel_gpu $BLOCKS $THREADS
+	    echo "  " 
+	    echo "  " 
+	    echo "  " 
         done
     done
 
