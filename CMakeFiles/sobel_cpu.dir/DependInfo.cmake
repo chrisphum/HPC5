@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/chris/Desktop/hw5/sobel_cpu.cpp" "CMakeFiles/sobel_cpu.dir/sobel_cpu.cpp.o" "gcc" "CMakeFiles/sobel_cpu.dir/sobel_cpu.cpp.o.d"
+  "/global/homes/c/chrishuy/hw5/HPC5/sobel_cpu.cpp" "CMakeFiles/sobel_cpu.dir/sobel_cpu.cpp.o" "gcc" "CMakeFiles/sobel_cpu.dir/sobel_cpu.cpp.o.d"
   )
 
 # Targets to which this target links.
