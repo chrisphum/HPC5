@@ -87,7 +87,7 @@ do_sobel_filtering(float *in, float *out, int ncols, int nrows)
    //    float s[] = { in[i-ncols-1] , in[i-ncols], in[i-ncols+1] , in[i-1], in[i], in[i+1], in[i+ncols-1], in[i+ncols], in[i+ncols+1] };
    //    out[i] = sobel_filtered_pixel(s, 5, 5, ncols, nrows, Gx, Gy);
    // }
-
+  #pragma omp parallel for collapse(2)
    for (int c=1; c< ncols-1; c++) {
       for (int r=1; r<nrows-1; r++) {
          int i = (r*ncols) + c;
