@@ -1,0 +1,24 @@
+#!/bin/bash
+
+export LIBOMPTARGET_INFO=4
+
+for BLOCKS in 1 4 16 64 256 1024 4096 # loop over problem sizes
+   do 
+        for THREADS in 32 64 128 256 512 1024
+        do	
+		echo "BLOCKS $BLOCKS"
+		echo "THREADS $THREADS"
+            nvprof -m sm_efficiency ./sobel_gpu $BLOCKS $THREADS
+	    echo "  " 
+	    echo "  " 
+	    echo "  " 
+        done
+    done
+
+for N in 1 2 4 8 16
+    do
+    OMP_NUM_THREADS=$N
+    echo usingThreads >> output.txt 
+    echo $N >> output.txt 
+    ./sobel_cpu >> output.txt
+done 
