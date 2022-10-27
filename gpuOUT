@@ -2,210 +2,284 @@ chrishuy@cgpu18:~/hw5/HPC5> ./this.txt
 BLOCKS 1
 THREADS 32
  Read data from the file ./data/zebra-gray-int8-4x 
-==26153== NVPROF is profiling process 26153, command: ./sobel_gpu 1 32
+==39854== NVPROF is profiling process 39854, command: ./sobel_gpu 1 32
  GPU configuration: 1 blocks, 32 threads per block 
-==26153== Error: Application encountered error: an illegal memory access was encountered (700).
-GPUassert: an illegal memory access was encountered /global/homes/c/chrishuy/hw5/HPC5/sobel_gpu.cu 208
-======== Error: CUDA device error.
-  
-  
-  
-BLOCKS 1
-THREADS 64
- Read data from the file ./data/zebra-gray-int8-4x 
-==26174== NVPROF is profiling process 26174, command: ./sobel_gpu 1 64
- GPU configuration: 1 blocks, 64 threads per block 
-==26174== Error: Application encountered error: an illegal memory access was encountered (700).
-GPUassert: an illegal memory access was encountered /global/homes/c/chrishuy/hw5/HPC5/sobel_gpu.cu 208
-======== Warning: 1 records have invalid timestamps due to insufficient semaphore pool size. You can configure the pool size using the option --profiling-semaphore-pool-size.
-======== Profiling result:
-No events/metrics were profiled.
-======== Error: CUDA device error.
-  
-  
-  
-BLOCKS 1
-THREADS 128
- Read data from the file ./data/zebra-gray-int8-4x 
-==26195== NVPROF is profiling process 26195, command: ./sobel_gpu 1 128
- GPU configuration: 1 blocks, 128 threads per block 
-==26195== Error: Application encountered error: an illegal memory access was encountered (700).
-GPUassert: an illegal memory access was encountered /global/homes/c/chrishuy/hw5/HPC5/sobel_gpu.cu 208
-======== Error: CUDA device error.
-  
-  
-  
-BLOCKS 1
-THREADS 256
- Read data from the file ./data/zebra-gray-int8-4x 
-==26216== NVPROF is profiling process 26216, command: ./sobel_gpu 1 256
- GPU configuration: 1 blocks, 256 threads per block 
-==26216== Error: Application encountered error: an illegal memory access was encountered (700).
-GPUassert: an illegal memory access was encountered /global/homes/c/chrishuy/hw5/HPC5/sobel_gpu.cu 208
-======== Error: CUDA device error.
-  
-  
-  
-BLOCKS 1
-THREADS 512
- Read data from the file ./data/zebra-gray-int8-4x 
-==26239== NVPROF is profiling process 26239, command: ./sobel_gpu 1 512
- GPU configuration: 1 blocks, 512 threads per block 
-==26239== Error: Application encountered error: an illegal memory access was encountered (700).
-GPUassert: an illegal memory access was encountered /global/homes/c/chrishuy/hw5/HPC5/sobel_gpu.cu 208
-======== Error: CUDA device error.
-  
-  
-  
-BLOCKS 1
-THREADS 1024
- Read data from the file ./data/zebra-gray-int8-4x 
-==26260== NVPROF is profiling process 26260, command: ./sobel_gpu 1 1024
- GPU configuration: 1 blocks, 1024 threads per block 
-==26260== Error: Application encountered error: an illegal memory access was encountered (700).
-GPUassert: an illegal memory access was encountered /global/homes/c/chrishuy/hw5/HPC5/sobel_gpu.cu 208
-======== Error: CUDA device error.
-  
-  
-  
-BLOCKS 4
-THREADS 32
- Read data from the file ./data/zebra-gray-int8-4x 
-==26280== NVPROF is profiling process 26280, command: ./sobel_gpu 4 32
- GPU configuration: 4 blocks, 32 threads per block 
-==26280== Error: Application encountered error: an illegal memory access was encountered (700).
-GPUassert: an illegal memory access was encountered /global/homes/c/chrishuy/hw5/HPC5/sobel_gpu.cu 208
-======== Error: CUDA device error.
-  
-  
-  
-BLOCKS 4
-THREADS 64
- Read data from the file ./data/zebra-gray-int8-4x 
-==26301== NVPROF is profiling process 26301, command: ./sobel_gpu 4 64
- GPU configuration: 4 blocks, 64 threads per block 
-==26301== Error: Application encountered error: an illegal memory access was encountered (700).
-GPUassert: an illegal memory access was encountered /global/homes/c/chrishuy/hw5/HPC5/sobel_gpu.cu 208
-======== Error: CUDA device error.
-  
-  
-  
-BLOCKS 4
-THREADS 128
- Read data from the file ./data/zebra-gray-int8-4x 
-==26322== NVPROF is profiling process 26322, command: ./sobel_gpu 4 128
- GPU configuration: 4 blocks, 128 threads per block 
-==26322== Error: Application encountered error: an illegal memory access was encountered (700).
-GPUassert: an illegal memory access was encountered /global/homes/c/chrishuy/hw5/HPC5/sobel_gpu.cu 208
-======== Error: CUDA device error.
-  
-  
-  
-BLOCKS 4
-THREADS 256
- Read data from the file ./data/zebra-gray-int8-4x 
-==26343== NVPROF is profiling process 26343, command: ./sobel_gpu 4 256
- GPU configuration: 4 blocks, 256 threads per block 
-==26343== Error: Application encountered error: an illegal memory access was encountered (700).
-GPUassert: an illegal memory access was encountered /global/homes/c/chrishuy/hw5/HPC5/sobel_gpu.cu 208
-======== Error: CUDA device error.
-  
-  
-  
-BLOCKS 4
-THREADS 512
- Read data from the file ./data/zebra-gray-int8-4x 
-==26364== NVPROF is profiling process 26364, command: ./sobel_gpu 4 512
- GPU configuration: 4 blocks, 512 threads per block 
-==26364== Error: Application encountered error: an illegal memory access was encountered (700).
-GPUassert: an illegal memory access was encountered /global/homes/c/chrishuy/hw5/HPC5/sobel_gpu.cu 208
-======== Error: CUDA device error.
-  
-  
-  
-BLOCKS 4
-THREADS 1024
- Read data from the file ./data/zebra-gray-int8-4x 
-==26385== NVPROF is profiling process 26385, command: ./sobel_gpu 4 1024
- GPU configuration: 4 blocks, 1024 threads per block 
-==26385== Error: Application encountered error: an illegal memory access was encountered (700).
-GPUassert: an illegal memory access was encountered /global/homes/c/chrishuy/hw5/HPC5/sobel_gpu.cu 208
-======== Error: CUDA device error.
-  
-  
-  
-BLOCKS 16
-THREADS 32
- Read data from the file ./data/zebra-gray-int8-4x 
-==26406== NVPROF is profiling process 26406, command: ./sobel_gpu 16 32
- GPU configuration: 16 blocks, 32 threads per block 
-==26406== Error: Application encountered error: an illegal memory access was encountered (700).
-GPUassert: an illegal memory access was encountered /global/homes/c/chrishuy/hw5/HPC5/sobel_gpu.cu 208
-======== Error: CUDA device error.
-  
-  
-  
-BLOCKS 16
-THREADS 64
- Read data from the file ./data/zebra-gray-int8-4x 
-==26427== NVPROF is profiling process 26427, command: ./sobel_gpu 16 64
- GPU configuration: 16 blocks, 64 threads per block 
-==26427== Error: Application encountered error: an illegal memory access was encountered (700).
-GPUassert: an illegal memory access was encountered /global/homes/c/chrishuy/hw5/HPC5/sobel_gpu.cu 208
-======== Error: CUDA device error.
-  
-  
-  
-BLOCKS 16
-THREADS 128
- Read data from the file ./data/zebra-gray-int8-4x 
-==26448== NVPROF is profiling process 26448, command: ./sobel_gpu 16 128
- GPU configuration: 16 blocks, 128 threads per block 
-==26448== Error: Application encountered error: an illegal memory access was encountered (700).
-GPUassert: an illegal memory access was encountered /global/homes/c/chrishuy/hw5/HPC5/sobel_gpu.cu 208
-======== Warning: 1 records have invalid timestamps due to insufficient semaphore pool size. You can configure the pool size using the option --profiling-semaphore-pool-size.
-======== Profiling result:
-No events/metrics were profiled.
-======== Error: CUDA device error.
-  
-  
-  
-BLOCKS 16
-THREADS 256
- Read data from the file ./data/zebra-gray-int8-4x 
-==26469== NVPROF is profiling process 26469, command: ./sobel_gpu 16 256
- GPU configuration: 16 blocks, 256 threads per block 
-==26469== Error: Application encountered error: an illegal memory access was encountered (700).
-GPUassert: an illegal memory access was encountered /global/homes/c/chrishuy/hw5/HPC5/sobel_gpu.cu 208
-======== Error: CUDA device error.
-  
-  
-  
-BLOCKS 16
-THREADS 512
- Read data from the file ./data/zebra-gray-int8-4x 
-==26489== NVPROF is profiling process 26489, command: ./sobel_gpu 16 512
- GPU configuration: 16 blocks, 512 threads per block 
  Wrote the output file ./data/gpu_out.dat 
-==26489== Profiling application: ./sobel_gpu 16 512
-==26489== Profiling result:
-==26489== Metric result:
+==39854== Profiling application: ./sobel_gpu 1 32
+==39854== Profiling result:
+==39854== Metric result:
 Invocations                               Metric Name                        Metric Description         Min         Max         Avg
 Device "Tesla V100-SXM2-16GB (0)"
     Kernel: sobel_kernel_gpu(float*, float*, int, int, int, float*, float*)
-          1                             sm_efficiency                   Multiprocessor Activity      19.90%      19.90%      19.90%
+          1                             sm_efficiency                   Multiprocessor Activity       1.25%       1.25%       1.25%
+  
+  
+  
+BLOCKS 1
+THREADS 64
+ Read data from the file ./data/zebra-gray-int8-4x 
+==39876== NVPROF is profiling process 39876, command: ./sobel_gpu 1 64
+ GPU configuration: 1 blocks, 64 threads per block 
+ Wrote the output file ./data/gpu_out.dat 
+==39876== Profiling application: ./sobel_gpu 1 64
+==39876== Profiling result:
+==39876== Metric result:
+Invocations                               Metric Name                        Metric Description         Min         Max         Avg
+Device "Tesla V100-SXM2-16GB (0)"
+    Kernel: sobel_kernel_gpu(float*, float*, int, int, int, float*, float*)
+          1                             sm_efficiency                   Multiprocessor Activity       1.25%       1.25%       1.25%
+  
+  
+  
+BLOCKS 1
+THREADS 128
+ Read data from the file ./data/zebra-gray-int8-4x 
+==39899== NVPROF is profiling process 39899, command: ./sobel_gpu 1 128
+ GPU configuration: 1 blocks, 128 threads per block 
+ Wrote the output file ./data/gpu_out.dat 
+==39899== Profiling application: ./sobel_gpu 1 128
+==39899== Profiling result:
+==39899== Metric result:
+Invocations                               Metric Name                        Metric Description         Min         Max         Avg
+Device "Tesla V100-SXM2-16GB (0)"
+    Kernel: sobel_kernel_gpu(float*, float*, int, int, int, float*, float*)
+          1                             sm_efficiency                   Multiprocessor Activity       1.25%       1.25%       1.25%
+  
+  
+  
+BLOCKS 1
+THREADS 256
+ Read data from the file ./data/zebra-gray-int8-4x 
+==39920== NVPROF is profiling process 39920, command: ./sobel_gpu 1 256
+ GPU configuration: 1 blocks, 256 threads per block 
+ Wrote the output file ./data/gpu_out.dat 
+==39920== Profiling application: ./sobel_gpu 1 256
+==39920== Profiling result:
+==39920== Metric result:
+Invocations                               Metric Name                        Metric Description         Min         Max         Avg
+Device "Tesla V100-SXM2-16GB (0)"
+    Kernel: sobel_kernel_gpu(float*, float*, int, int, int, float*, float*)
+          1                             sm_efficiency                   Multiprocessor Activity       1.25%       1.25%       1.25%
+  
+  
+  
+BLOCKS 1
+THREADS 512
+ Read data from the file ./data/zebra-gray-int8-4x 
+==39941== NVPROF is profiling process 39941, command: ./sobel_gpu 1 512
+ GPU configuration: 1 blocks, 512 threads per block 
+ Wrote the output file ./data/gpu_out.dat 
+==39941== Profiling application: ./sobel_gpu 1 512
+==39941== Profiling result:
+==39941== Metric result:
+Invocations                               Metric Name                        Metric Description         Min         Max         Avg
+Device "Tesla V100-SXM2-16GB (0)"
+    Kernel: sobel_kernel_gpu(float*, float*, int, int, int, float*, float*)
+          1                             sm_efficiency                   Multiprocessor Activity       1.25%       1.25%       1.25%
+  
+  
+  
+BLOCKS 1
+THREADS 1024
+ Read data from the file ./data/zebra-gray-int8-4x 
+==39962== NVPROF is profiling process 39962, command: ./sobel_gpu 1 1024
+ GPU configuration: 1 blocks, 1024 threads per block 
+ Wrote the output file ./data/gpu_out.dat 
+==39962== Profiling application: ./sobel_gpu 1 1024
+==39962== Profiling result:
+==39962== Metric result:
+Invocations                               Metric Name                        Metric Description         Min         Max         Avg
+Device "Tesla V100-SXM2-16GB (0)"
+    Kernel: sobel_kernel_gpu(float*, float*, int, int, int, float*, float*)
+          1                             sm_efficiency                   Multiprocessor Activity       1.25%       1.25%       1.25%
+  
+  
+  
+BLOCKS 4
+THREADS 32
+ Read data from the file ./data/zebra-gray-int8-4x 
+==40135== NVPROF is profiling process 40135, command: ./sobel_gpu 4 32
+ GPU configuration: 4 blocks, 32 threads per block 
+ Wrote the output file ./data/gpu_out.dat 
+==40135== Profiling application: ./sobel_gpu 4 32
+==40135== Profiling result:
+==40135== Metric result:
+Invocations                               Metric Name                        Metric Description         Min         Max         Avg
+Device "Tesla V100-SXM2-16GB (0)"
+    Kernel: sobel_kernel_gpu(float*, float*, int, int, int, float*, float*)
+          1                             sm_efficiency                   Multiprocessor Activity       5.00%       5.00%       5.00%
+  
+  
+  
+BLOCKS 4
+THREADS 64
+ Read data from the file ./data/zebra-gray-int8-4x 
+==40156== NVPROF is profiling process 40156, command: ./sobel_gpu 4 64
+ GPU configuration: 4 blocks, 64 threads per block 
+ Wrote the output file ./data/gpu_out.dat 
+==40156== Profiling application: ./sobel_gpu 4 64
+==40156== Profiling result:
+==40156== Metric result:
+Invocations                               Metric Name                        Metric Description         Min         Max         Avg
+Device "Tesla V100-SXM2-16GB (0)"
+    Kernel: sobel_kernel_gpu(float*, float*, int, int, int, float*, float*)
+          1                             sm_efficiency                   Multiprocessor Activity       5.00%       5.00%       5.00%
+  
+  
+  
+BLOCKS 4
+THREADS 128
+ Read data from the file ./data/zebra-gray-int8-4x 
+==40179== NVPROF is profiling process 40179, command: ./sobel_gpu 4 128
+ GPU configuration: 4 blocks, 128 threads per block 
+ Wrote the output file ./data/gpu_out.dat 
+==40179== Profiling application: ./sobel_gpu 4 128
+==40179== Profiling result:
+==40179== Metric result:
+Invocations                               Metric Name                        Metric Description         Min         Max         Avg
+Device "Tesla V100-SXM2-16GB (0)"
+    Kernel: sobel_kernel_gpu(float*, float*, int, int, int, float*, float*)
+          1                             sm_efficiency                   Multiprocessor Activity       5.00%       5.00%       5.00%
+  
+  
+  
+BLOCKS 4
+THREADS 256
+ Read data from the file ./data/zebra-gray-int8-4x 
+==40200== NVPROF is profiling process 40200, command: ./sobel_gpu 4 256
+ GPU configuration: 4 blocks, 256 threads per block 
+ Wrote the output file ./data/gpu_out.dat 
+==40200== Profiling application: ./sobel_gpu 4 256
+==40200== Profiling result:
+==40200== Metric result:
+Invocations                               Metric Name                        Metric Description         Min         Max         Avg
+Device "Tesla V100-SXM2-16GB (0)"
+    Kernel: sobel_kernel_gpu(float*, float*, int, int, int, float*, float*)
+          1                             sm_efficiency                   Multiprocessor Activity       5.00%       5.00%       5.00%
+  
+  
+  
+BLOCKS 4
+THREADS 512
+ Read data from the file ./data/zebra-gray-int8-4x 
+==40225== NVPROF is profiling process 40225, command: ./sobel_gpu 4 512
+ GPU configuration: 4 blocks, 512 threads per block 
+ Wrote the output file ./data/gpu_out.dat 
+==40225== Profiling application: ./sobel_gpu 4 512
+==40225== Profiling result:
+==40225== Metric result:
+Invocations                               Metric Name                        Metric Description         Min         Max         Avg
+Device "Tesla V100-SXM2-16GB (0)"
+    Kernel: sobel_kernel_gpu(float*, float*, int, int, int, float*, float*)
+          1                             sm_efficiency                   Multiprocessor Activity       4.99%       4.99%       4.99%
+  
+  
+  
+BLOCKS 4
+THREADS 1024
+ Read data from the file ./data/zebra-gray-int8-4x 
+==40253== NVPROF is profiling process 40253, command: ./sobel_gpu 4 1024
+ GPU configuration: 4 blocks, 1024 threads per block 
+ Wrote the output file ./data/gpu_out.dat 
+==40253== Profiling application: ./sobel_gpu 4 1024
+==40253== Profiling result:
+==40253== Metric result:
+Invocations                               Metric Name                        Metric Description         Min         Max         Avg
+Device "Tesla V100-SXM2-16GB (0)"
+    Kernel: sobel_kernel_gpu(float*, float*, int, int, int, float*, float*)
+          1                             sm_efficiency                   Multiprocessor Activity       5.00%       5.00%       5.00%
+  
+  
+  
+BLOCKS 16
+THREADS 32
+ Read data from the file ./data/zebra-gray-int8-4x 
+==40288== NVPROF is profiling process 40288, command: ./sobel_gpu 16 32
+ GPU configuration: 16 blocks, 32 threads per block 
+ Wrote the output file ./data/gpu_out.dat 
+==40288== Profiling application: ./sobel_gpu 16 32
+==40288== Profiling result:
+==40288== Metric result:
+Invocations                               Metric Name                        Metric Description         Min         Max         Avg
+Device "Tesla V100-SXM2-16GB (0)"
+    Kernel: sobel_kernel_gpu(float*, float*, int, int, int, float*, float*)
+          1                             sm_efficiency                   Multiprocessor Activity      19.99%      19.99%      19.99%
+  
+  
+  
+BLOCKS 16
+THREADS 64
+ Read data from the file ./data/zebra-gray-int8-4x 
+==40309== NVPROF is profiling process 40309, command: ./sobel_gpu 16 64
+ GPU configuration: 16 blocks, 64 threads per block 
+ Wrote the output file ./data/gpu_out.dat 
+==40309== Profiling application: ./sobel_gpu 16 64
+==40309== Profiling result:
+==40309== Metric result:
+Invocations                               Metric Name                        Metric Description         Min         Max         Avg
+Device "Tesla V100-SXM2-16GB (0)"
+    Kernel: sobel_kernel_gpu(float*, float*, int, int, int, float*, float*)
+          1                             sm_efficiency                   Multiprocessor Activity      19.99%      19.99%      19.99%
+  
+  
+  
+BLOCKS 16
+THREADS 128
+ Read data from the file ./data/zebra-gray-int8-4x 
+==40330== NVPROF is profiling process 40330, command: ./sobel_gpu 16 128
+ GPU configuration: 16 blocks, 128 threads per block 
+ Wrote the output file ./data/gpu_out.dat 
+==40330== Profiling application: ./sobel_gpu 16 128
+==40330== Profiling result:
+==40330== Metric result:
+Invocations                               Metric Name                        Metric Description         Min         Max         Avg
+Device "Tesla V100-SXM2-16GB (0)"
+    Kernel: sobel_kernel_gpu(float*, float*, int, int, int, float*, float*)
+          1                             sm_efficiency                   Multiprocessor Activity      19.99%      19.99%      19.99%
+  
+  
+  
+BLOCKS 16
+THREADS 256
+ Read data from the file ./data/zebra-gray-int8-4x 
+==40359== NVPROF is profiling process 40359, command: ./sobel_gpu 16 256
+ GPU configuration: 16 blocks, 256 threads per block 
+ Wrote the output file ./data/gpu_out.dat 
+==40359== Profiling application: ./sobel_gpu 16 256
+==40359== Profiling result:
+==40359== Metric result:
+Invocations                               Metric Name                        Metric Description         Min         Max         Avg
+Device "Tesla V100-SXM2-16GB (0)"
+    Kernel: sobel_kernel_gpu(float*, float*, int, int, int, float*, float*)
+          1                             sm_efficiency                   Multiprocessor Activity      19.99%      19.99%      19.99%
+  
+  
+  
+BLOCKS 16
+THREADS 512
+ Read data from the file ./data/zebra-gray-int8-4x 
+==40380== NVPROF is profiling process 40380, command: ./sobel_gpu 16 512
+ GPU configuration: 16 blocks, 512 threads per block 
+ Wrote the output file ./data/gpu_out.dat 
+==40380== Profiling application: ./sobel_gpu 16 512
+==40380== Profiling result:
+==40380== Metric result:
+Invocations                               Metric Name                        Metric Description         Min         Max         Avg
+Device "Tesla V100-SXM2-16GB (0)"
+    Kernel: sobel_kernel_gpu(float*, float*, int, int, int, float*, float*)
+          1                             sm_efficiency                   Multiprocessor Activity      19.95%      19.95%      19.95%
   
   
   
 BLOCKS 16
 THREADS 1024
  Read data from the file ./data/zebra-gray-int8-4x 
-==26510== NVPROF is profiling process 26510, command: ./sobel_gpu 16 1024
+==40401== NVPROF is profiling process 40401, command: ./sobel_gpu 16 1024
  GPU configuration: 16 blocks, 1024 threads per block 
  Wrote the output file ./data/gpu_out.dat 
-==26510== Profiling application: ./sobel_gpu 16 1024
-==26510== Profiling result:
-==26510== Metric result:
+==40401== Profiling application: ./sobel_gpu 16 1024
+==40401== Profiling result:
+==40401== Metric result:
 Invocations                               Metric Name                        Metric Description         Min         Max         Avg
 Device "Tesla V100-SXM2-16GB (0)"
     Kernel: sobel_kernel_gpu(float*, float*, int, int, int, float*, float*)
@@ -216,34 +290,12 @@ Device "Tesla V100-SXM2-16GB (0)"
 BLOCKS 64
 THREADS 32
  Read data from the file ./data/zebra-gray-int8-4x 
-==26531== NVPROF is profiling process 26531, command: ./sobel_gpu 64 32
+==40421== NVPROF is profiling process 40421, command: ./sobel_gpu 64 32
  GPU configuration: 64 blocks, 32 threads per block 
-==26531== Error: Application encountered error: an illegal memory access was encountered (700).
-GPUassert: an illegal memory access was encountered /global/homes/c/chrishuy/hw5/HPC5/sobel_gpu.cu 208
-======== Error: CUDA device error.
-  
-  
-  
-BLOCKS 64
-THREADS 64
- Read data from the file ./data/zebra-gray-int8-4x 
-==26552== NVPROF is profiling process 26552, command: ./sobel_gpu 64 64
- GPU configuration: 64 blocks, 64 threads per block 
-==26552== Error: Application encountered error: an illegal memory access was encountered (700).
-GPUassert: an illegal memory access was encountered /global/homes/c/chrishuy/hw5/HPC5/sobel_gpu.cu 208
-======== Error: CUDA device error.
-  
-  
-  
-BLOCKS 64
-THREADS 128
- Read data from the file ./data/zebra-gray-int8-4x 
-==26573== NVPROF is profiling process 26573, command: ./sobel_gpu 64 128
- GPU configuration: 64 blocks, 128 threads per block 
  Wrote the output file ./data/gpu_out.dat 
-==26573== Profiling application: ./sobel_gpu 64 128
-==26573== Profiling result:
-==26573== Metric result:
+==40421== Profiling application: ./sobel_gpu 64 32
+==40421== Profiling result:
+==40421== Metric result:
 Invocations                               Metric Name                        Metric Description         Min         Max         Avg
 Device "Tesla V100-SXM2-16GB (0)"
     Kernel: sobel_kernel_gpu(float*, float*, int, int, int, float*, float*)
@@ -252,46 +304,78 @@ Device "Tesla V100-SXM2-16GB (0)"
   
   
 BLOCKS 64
-THREADS 256
+THREADS 64
  Read data from the file ./data/zebra-gray-int8-4x 
-==26596== NVPROF is profiling process 26596, command: ./sobel_gpu 64 256
- GPU configuration: 64 blocks, 256 threads per block 
+==40442== NVPROF is profiling process 40442, command: ./sobel_gpu 64 64
+ GPU configuration: 64 blocks, 64 threads per block 
  Wrote the output file ./data/gpu_out.dat 
-==26596== Profiling application: ./sobel_gpu 64 256
-==26596== Profiling result:
-==26596== Metric result:
+==40442== Profiling application: ./sobel_gpu 64 64
+==40442== Profiling result:
+==40442== Metric result:
 Invocations                               Metric Name                        Metric Description         Min         Max         Avg
 Device "Tesla V100-SXM2-16GB (0)"
     Kernel: sobel_kernel_gpu(float*, float*, int, int, int, float*, float*)
-          1                             sm_efficiency                   Multiprocessor Activity      79.85%      79.85%      79.85%
+          1                             sm_efficiency                   Multiprocessor Activity      79.91%      79.91%      79.91%
+  
+  
+  
+BLOCKS 64
+THREADS 128
+ Read data from the file ./data/zebra-gray-int8-4x 
+==40463== NVPROF is profiling process 40463, command: ./sobel_gpu 64 128
+ GPU configuration: 64 blocks, 128 threads per block 
+ Wrote the output file ./data/gpu_out.dat 
+==40463== Profiling application: ./sobel_gpu 64 128
+==40463== Profiling result:
+==40463== Metric result:
+Invocations                               Metric Name                        Metric Description         Min         Max         Avg
+Device "Tesla V100-SXM2-16GB (0)"
+    Kernel: sobel_kernel_gpu(float*, float*, int, int, int, float*, float*)
+          1                             sm_efficiency                   Multiprocessor Activity      79.89%      79.89%      79.89%
+  
+  
+  
+BLOCKS 64
+THREADS 256
+ Read data from the file ./data/zebra-gray-int8-4x 
+==40515== NVPROF is profiling process 40515, command: ./sobel_gpu 64 256
+ GPU configuration: 64 blocks, 256 threads per block 
+ Wrote the output file ./data/gpu_out.dat 
+==40515== Profiling application: ./sobel_gpu 64 256
+==40515== Profiling result:
+==40515== Metric result:
+Invocations                               Metric Name                        Metric Description         Min         Max         Avg
+Device "Tesla V100-SXM2-16GB (0)"
+    Kernel: sobel_kernel_gpu(float*, float*, int, int, int, float*, float*)
+          1                             sm_efficiency                   Multiprocessor Activity      79.72%      79.72%      79.72%
   
   
   
 BLOCKS 64
 THREADS 512
  Read data from the file ./data/zebra-gray-int8-4x 
-==26618== NVPROF is profiling process 26618, command: ./sobel_gpu 64 512
+==40536== NVPROF is profiling process 40536, command: ./sobel_gpu 64 512
  GPU configuration: 64 blocks, 512 threads per block 
  Wrote the output file ./data/gpu_out.dat 
-==26618== Profiling application: ./sobel_gpu 64 512
-==26618== Profiling result:
-==26618== Metric result:
+==40536== Profiling application: ./sobel_gpu 64 512
+==40536== Profiling result:
+==40536== Metric result:
 Invocations                               Metric Name                        Metric Description         Min         Max         Avg
 Device "Tesla V100-SXM2-16GB (0)"
     Kernel: sobel_kernel_gpu(float*, float*, int, int, int, float*, float*)
-          1                             sm_efficiency                   Multiprocessor Activity      79.00%      79.00%      79.00%
+          1                             sm_efficiency                   Multiprocessor Activity      79.06%      79.06%      79.06%
   
   
   
 BLOCKS 64
 THREADS 1024
  Read data from the file ./data/zebra-gray-int8-4x 
-==26640== NVPROF is profiling process 26640, command: ./sobel_gpu 64 1024
+==40557== NVPROF is profiling process 40557, command: ./sobel_gpu 64 1024
  GPU configuration: 64 blocks, 1024 threads per block 
  Wrote the output file ./data/gpu_out.dat 
-==26640== Profiling application: ./sobel_gpu 64 1024
-==26640== Profiling result:
-==26640== Metric result:
+==40557== Profiling application: ./sobel_gpu 64 1024
+==40557== Profiling result:
+==40557== Metric result:
 Invocations                               Metric Name                        Metric Description         Min         Max         Avg
 Device "Tesla V100-SXM2-16GB (0)"
     Kernel: sobel_kernel_gpu(float*, float*, int, int, int, float*, float*)
@@ -302,289 +386,290 @@ Device "Tesla V100-SXM2-16GB (0)"
 BLOCKS 256
 THREADS 32
  Read data from the file ./data/zebra-gray-int8-4x 
-==26661== NVPROF is profiling process 26661, command: ./sobel_gpu 256 32
+==40580== NVPROF is profiling process 40580, command: ./sobel_gpu 256 32
  GPU configuration: 256 blocks, 32 threads per block 
  Wrote the output file ./data/gpu_out.dat 
-==26661== Profiling application: ./sobel_gpu 256 32
-==26661== Profiling result:
-==26661== Metric result:
+==40580== Profiling application: ./sobel_gpu 256 32
+==40580== Profiling result:
+==40580== Metric result:
 Invocations                               Metric Name                        Metric Description         Min         Max         Avg
 Device "Tesla V100-SXM2-16GB (0)"
     Kernel: sobel_kernel_gpu(float*, float*, int, int, int, float*, float*)
-          1                             sm_efficiency                   Multiprocessor Activity      99.89%      99.89%      99.89%
+          1                             sm_efficiency                   Multiprocessor Activity      99.88%      99.88%      99.88%
   
   
   
 BLOCKS 256
 THREADS 64
  Read data from the file ./data/zebra-gray-int8-4x 
-==26681== NVPROF is profiling process 26681, command: ./sobel_gpu 256 64
+==40601== NVPROF is profiling process 40601, command: ./sobel_gpu 256 64
  GPU configuration: 256 blocks, 64 threads per block 
  Wrote the output file ./data/gpu_out.dat 
-==26681== Profiling application: ./sobel_gpu 256 64
-==26681== Profiling result:
-==26681== Metric result:
+==40601== Profiling application: ./sobel_gpu 256 64
+==40601== Profiling result:
+==40601== Metric result:
 Invocations                               Metric Name                        Metric Description         Min         Max         Avg
 Device "Tesla V100-SXM2-16GB (0)"
     Kernel: sobel_kernel_gpu(float*, float*, int, int, int, float*, float*)
-          1                             sm_efficiency                   Multiprocessor Activity      99.68%      99.68%      99.68%
+          1                             sm_efficiency                   Multiprocessor Activity      99.54%      99.54%      99.54%
   
   
   
 BLOCKS 256
 THREADS 128
  Read data from the file ./data/zebra-gray-int8-4x 
-==26702== NVPROF is profiling process 26702, command: ./sobel_gpu 256 128
+==40623== NVPROF is profiling process 40623, command: ./sobel_gpu 256 128
  GPU configuration: 256 blocks, 128 threads per block 
  Wrote the output file ./data/gpu_out.dat 
-==26702== Profiling application: ./sobel_gpu 256 128
-==26702== Profiling result:
-==26702== Metric result:
+==40623== Profiling application: ./sobel_gpu 256 128
+==40623== Profiling result:
+==40623== Metric result:
 Invocations                               Metric Name                        Metric Description         Min         Max         Avg
 Device "Tesla V100-SXM2-16GB (0)"
     Kernel: sobel_kernel_gpu(float*, float*, int, int, int, float*, float*)
-          1                             sm_efficiency                   Multiprocessor Activity      87.09%      87.09%      87.09%
+          1                             sm_efficiency                   Multiprocessor Activity      85.09%      85.09%      85.09%
   
   
   
 BLOCKS 256
 THREADS 256
  Read data from the file ./data/zebra-gray-int8-4x 
-==26724== NVPROF is profiling process 26724, command: ./sobel_gpu 256 256
+==40644== NVPROF is profiling process 40644, command: ./sobel_gpu 256 256
  GPU configuration: 256 blocks, 256 threads per block 
  Wrote the output file ./data/gpu_out.dat 
-==26724== Profiling application: ./sobel_gpu 256 256
-==26724== Profiling result:
-==26724== Metric result:
+==40644== Profiling application: ./sobel_gpu 256 256
+==40644== Profiling result:
+==40644== Metric result:
 Invocations                               Metric Name                        Metric Description         Min         Max         Avg
 Device "Tesla V100-SXM2-16GB (0)"
     Kernel: sobel_kernel_gpu(float*, float*, int, int, int, float*, float*)
-          1                             sm_efficiency                   Multiprocessor Activity      80.76%      80.76%      80.76%
+          1                             sm_efficiency                   Multiprocessor Activity      80.08%      80.08%      80.08%
   
   
   
 BLOCKS 256
 THREADS 512
  Read data from the file ./data/zebra-gray-int8-4x 
-==26747== NVPROF is profiling process 26747, command: ./sobel_gpu 256 512
+==40664== NVPROF is profiling process 40664, command: ./sobel_gpu 256 512
  GPU configuration: 256 blocks, 512 threads per block 
  Wrote the output file ./data/gpu_out.dat 
-==26747== Profiling application: ./sobel_gpu 256 512
-==26747== Profiling result:
-==26747== Metric result:
+==40664== Profiling application: ./sobel_gpu 256 512
+==40664== Profiling result:
+==40664== Metric result:
 Invocations                               Metric Name                        Metric Description         Min         Max         Avg
 Device "Tesla V100-SXM2-16GB (0)"
     Kernel: sobel_kernel_gpu(float*, float*, int, int, int, float*, float*)
-          1                             sm_efficiency                   Multiprocessor Activity      82.08%      82.08%      82.08%
+          1                             sm_efficiency                   Multiprocessor Activity      79.80%      79.80%      79.80%
   
   
   
 BLOCKS 256
 THREADS 1024
  Read data from the file ./data/zebra-gray-int8-4x 
-==26769== NVPROF is profiling process 26769, command: ./sobel_gpu 256 1024
+==40685== NVPROF is profiling process 40685, command: ./sobel_gpu 256 1024
  GPU configuration: 256 blocks, 1024 threads per block 
  Wrote the output file ./data/gpu_out.dat 
-==26769== Profiling application: ./sobel_gpu 256 1024
-==26769== Profiling result:
-==26769== Metric result:
+==40685== Profiling application: ./sobel_gpu 256 1024
+==40685== Profiling result:
+==40685== Metric result:
 Invocations                               Metric Name                        Metric Description         Min         Max         Avg
 Device "Tesla V100-SXM2-16GB (0)"
     Kernel: sobel_kernel_gpu(float*, float*, int, int, int, float*, float*)
-          1                             sm_efficiency                   Multiprocessor Activity      79.96%      79.96%      79.96%
+          1                             sm_efficiency                   Multiprocessor Activity      79.97%      79.97%      79.97%
   
   
   
 BLOCKS 1024
 THREADS 32
  Read data from the file ./data/zebra-gray-int8-4x 
-==26790== NVPROF is profiling process 26790, command: ./sobel_gpu 1024 32
+==40707== NVPROF is profiling process 40707, command: ./sobel_gpu 1024 32
  GPU configuration: 1024 blocks, 32 threads per block 
  Wrote the output file ./data/gpu_out.dat 
-==26790== Profiling application: ./sobel_gpu 1024 32
-==26790== Profiling result:
-==26790== Metric result:
+==40707== Profiling application: ./sobel_gpu 1024 32
+==40707== Profiling result:
+==40707== Metric result:
 Invocations                               Metric Name                        Metric Description         Min         Max         Avg
 Device "Tesla V100-SXM2-16GB (0)"
     Kernel: sobel_kernel_gpu(float*, float*, int, int, int, float*, float*)
-          1                             sm_efficiency                   Multiprocessor Activity      96.74%      96.74%      96.74%
+          1                             sm_efficiency                   Multiprocessor Activity      96.29%      96.29%      96.29%
   
   
   
 BLOCKS 1024
 THREADS 64
  Read data from the file ./data/zebra-gray-int8-4x 
-==26812== NVPROF is profiling process 26812, command: ./sobel_gpu 1024 64
+==40728== NVPROF is profiling process 40728, command: ./sobel_gpu 1024 64
  GPU configuration: 1024 blocks, 64 threads per block 
  Wrote the output file ./data/gpu_out.dat 
-==26812== Profiling application: ./sobel_gpu 1024 64
-==26812== Profiling result:
-==26812== Metric result:
+==40728== Profiling application: ./sobel_gpu 1024 64
+==40728== Profiling result:
+==40728== Metric result:
 Invocations                               Metric Name                        Metric Description         Min         Max         Avg
 Device "Tesla V100-SXM2-16GB (0)"
     Kernel: sobel_kernel_gpu(float*, float*, int, int, int, float*, float*)
-          1                             sm_efficiency                   Multiprocessor Activity      96.52%      96.52%      96.52%
+          1                             sm_efficiency                   Multiprocessor Activity      95.87%      95.87%      95.87%
   
   
   
 BLOCKS 1024
 THREADS 128
  Read data from the file ./data/zebra-gray-int8-4x 
-==26833== NVPROF is profiling process 26833, command: ./sobel_gpu 1024 128
+==40749== NVPROF is profiling process 40749, command: ./sobel_gpu 1024 128
  GPU configuration: 1024 blocks, 128 threads per block 
  Wrote the output file ./data/gpu_out.dat 
-==26833== Profiling application: ./sobel_gpu 1024 128
-==26833== Profiling result:
-==26833== Metric result:
+==40749== Profiling application: ./sobel_gpu 1024 128
+==40749== Profiling result:
+==40749== Metric result:
 Invocations                               Metric Name                        Metric Description         Min         Max         Avg
 Device "Tesla V100-SXM2-16GB (0)"
     Kernel: sobel_kernel_gpu(float*, float*, int, int, int, float*, float*)
-          1                             sm_efficiency                   Multiprocessor Activity      98.47%      98.47%      98.47%
+          1                             sm_efficiency                   Multiprocessor Activity      93.86%      93.86%      93.86%
   
   
   
 BLOCKS 1024
 THREADS 256
  Read data from the file ./data/zebra-gray-int8-4x 
-==26854== NVPROF is profiling process 26854, command: ./sobel_gpu 1024 256
+==40770== NVPROF is profiling process 40770, command: ./sobel_gpu 1024 256
  GPU configuration: 1024 blocks, 256 threads per block 
  Wrote the output file ./data/gpu_out.dat 
-==26854== Profiling application: ./sobel_gpu 1024 256
-==26854== Profiling result:
-==26854== Metric result:
+==40770== Profiling application: ./sobel_gpu 1024 256
+==40770== Profiling result:
+==40770== Metric result:
 Invocations                               Metric Name                        Metric Description         Min         Max         Avg
 Device "Tesla V100-SXM2-16GB (0)"
     Kernel: sobel_kernel_gpu(float*, float*, int, int, int, float*, float*)
-          1                             sm_efficiency                   Multiprocessor Activity      91.84%      91.84%      91.84%
+          1                             sm_efficiency                   Multiprocessor Activity      98.12%      98.12%      98.12%
   
   
   
 BLOCKS 1024
 THREADS 512
  Read data from the file ./data/zebra-gray-int8-4x 
-==26877== NVPROF is profiling process 26877, command: ./sobel_gpu 1024 512
+==40791== NVPROF is profiling process 40791, command: ./sobel_gpu 1024 512
  GPU configuration: 1024 blocks, 512 threads per block 
  Wrote the output file ./data/gpu_out.dat 
-==26877== Profiling application: ./sobel_gpu 1024 512
-==26877== Profiling result:
-==26877== Metric result:
+==40791== Profiling application: ./sobel_gpu 1024 512
+==40791== Profiling result:
+==40791== Metric result:
 Invocations                               Metric Name                        Metric Description         Min         Max         Avg
 Device "Tesla V100-SXM2-16GB (0)"
     Kernel: sobel_kernel_gpu(float*, float*, int, int, int, float*, float*)
-          1                             sm_efficiency                   Multiprocessor Activity      91.40%      91.40%      91.40%
+          1                             sm_efficiency                   Multiprocessor Activity      98.01%      98.01%      98.01%
   
   
   
 BLOCKS 1024
 THREADS 1024
  Read data from the file ./data/zebra-gray-int8-4x 
-==26897== NVPROF is profiling process 26897, command: ./sobel_gpu 1024 1024
+==40812== NVPROF is profiling process 40812, command: ./sobel_gpu 1024 1024
  GPU configuration: 1024 blocks, 1024 threads per block 
  Wrote the output file ./data/gpu_out.dat 
-==26897== Profiling application: ./sobel_gpu 1024 1024
-==26897== Profiling result:
-==26897== Metric result:
+==40812== Profiling application: ./sobel_gpu 1024 1024
+==40812== Profiling result:
+==40812== Metric result:
 Invocations                               Metric Name                        Metric Description         Min         Max         Avg
 Device "Tesla V100-SXM2-16GB (0)"
     Kernel: sobel_kernel_gpu(float*, float*, int, int, int, float*, float*)
-          1                             sm_efficiency                   Multiprocessor Activity      98.18%      98.18%      98.18%
+          1                             sm_efficiency                   Multiprocessor Activity      98.19%      98.19%      98.19%
   
   
   
 BLOCKS 4096
 THREADS 32
  Read data from the file ./data/zebra-gray-int8-4x 
-==26918== NVPROF is profiling process 26918, command: ./sobel_gpu 4096 32
+==40833== NVPROF is profiling process 40833, command: ./sobel_gpu 4096 32
  GPU configuration: 4096 blocks, 32 threads per block 
  Wrote the output file ./data/gpu_out.dat 
-==26918== Profiling application: ./sobel_gpu 4096 32
-==26918== Profiling result:
-==26918== Metric result:
+==40833== Profiling application: ./sobel_gpu 4096 32
+==40833== Profiling result:
+==40833== Metric result:
 Invocations                               Metric Name                        Metric Description         Min         Max         Avg
 Device "Tesla V100-SXM2-16GB (0)"
     Kernel: sobel_kernel_gpu(float*, float*, int, int, int, float*, float*)
-          1                             sm_efficiency                   Multiprocessor Activity      94.28%      94.28%      94.28%
+          1                             sm_efficiency                   Multiprocessor Activity      93.87%      93.87%      93.87%
   
   
   
 BLOCKS 4096
 THREADS 64
  Read data from the file ./data/zebra-gray-int8-4x 
-==26955== NVPROF is profiling process 26955, command: ./sobel_gpu 4096 64
+==40853== NVPROF is profiling process 40853, command: ./sobel_gpu 4096 64
  GPU configuration: 4096 blocks, 64 threads per block 
  Wrote the output file ./data/gpu_out.dat 
-==26955== Profiling application: ./sobel_gpu 4096 64
-==26955== Profiling result:
-==26955== Metric result:
+==40853== Profiling application: ./sobel_gpu 4096 64
+==40853== Profiling result:
+==40853== Metric result:
 Invocations                               Metric Name                        Metric Description         Min         Max         Avg
 Device "Tesla V100-SXM2-16GB (0)"
     Kernel: sobel_kernel_gpu(float*, float*, int, int, int, float*, float*)
-          1                             sm_efficiency                   Multiprocessor Activity      95.42%      95.42%      95.42%
+          1                             sm_efficiency                   Multiprocessor Activity      94.79%      94.79%      94.79%
   
   
   
 BLOCKS 4096
 THREADS 128
  Read data from the file ./data/zebra-gray-int8-4x 
-==27111== NVPROF is profiling process 27111, command: ./sobel_gpu 4096 128
+==40874== NVPROF is profiling process 40874, command: ./sobel_gpu 4096 128
  GPU configuration: 4096 blocks, 128 threads per block 
  Wrote the output file ./data/gpu_out.dat 
-==27111== Profiling application: ./sobel_gpu 4096 128
-==27111== Profiling result:
-==27111== Metric result:
+==40874== Profiling application: ./sobel_gpu 4096 128
+==40874== Profiling result:
+==40874== Metric result:
 Invocations                               Metric Name                        Metric Description         Min         Max         Avg
 Device "Tesla V100-SXM2-16GB (0)"
     Kernel: sobel_kernel_gpu(float*, float*, int, int, int, float*, float*)
-          1                             sm_efficiency                   Multiprocessor Activity      96.91%      96.91%      96.91%
+          1                             sm_efficiency                   Multiprocessor Activity      96.42%      96.42%      96.42%
   
   
   
 BLOCKS 4096
 THREADS 256
  Read data from the file ./data/zebra-gray-int8-4x 
-==27132== NVPROF is profiling process 27132, command: ./sobel_gpu 4096 256
+==40895== NVPROF is profiling process 40895, command: ./sobel_gpu 4096 256
  GPU configuration: 4096 blocks, 256 threads per block 
  Wrote the output file ./data/gpu_out.dat 
-==27132== Profiling application: ./sobel_gpu 4096 256
-==27132== Profiling result:
-==27132== Metric result:
+==40895== Profiling application: ./sobel_gpu 4096 256
+==40895== Profiling result:
+==40895== Metric result:
 Invocations                               Metric Name                        Metric Description         Min         Max         Avg
 Device "Tesla V100-SXM2-16GB (0)"
     Kernel: sobel_kernel_gpu(float*, float*, int, int, int, float*, float*)
-          1                             sm_efficiency                   Multiprocessor Activity      97.82%      97.82%      97.82%
+          1                             sm_efficiency                   Multiprocessor Activity      98.05%      98.05%      98.05%
   
   
   
 BLOCKS 4096
 THREADS 512
  Read data from the file ./data/zebra-gray-int8-4x 
-==27153== NVPROF is profiling process 27153, command: ./sobel_gpu 4096 512
+==40916== NVPROF is profiling process 40916, command: ./sobel_gpu 4096 512
  GPU configuration: 4096 blocks, 512 threads per block 
  Wrote the output file ./data/gpu_out.dat 
-==27153== Profiling application: ./sobel_gpu 4096 512
-==27153== Profiling result:
-==27153== Metric result:
+==40916== Profiling application: ./sobel_gpu 4096 512
+==40916== Profiling result:
+==40916== Metric result:
 Invocations                               Metric Name                        Metric Description         Min         Max         Avg
 Device "Tesla V100-SXM2-16GB (0)"
     Kernel: sobel_kernel_gpu(float*, float*, int, int, int, float*, float*)
-          1                             sm_efficiency                   Multiprocessor Activity      98.29%      98.29%      98.29%
+          1                             sm_efficiency                   Multiprocessor Activity      98.10%      98.10%      98.10%
   
   
   
 BLOCKS 4096
 THREADS 1024
  Read data from the file ./data/zebra-gray-int8-4x 
-==27174== NVPROF is profiling process 27174, command: ./sobel_gpu 4096 1024
+==40939== NVPROF is profiling process 40939, command: ./sobel_gpu 4096 1024
  GPU configuration: 4096 blocks, 1024 threads per block 
  Wrote the output file ./data/gpu_out.dat 
-==27174== Profiling application: ./sobel_gpu 4096 1024
-==27174== Profiling result:
-==27174== Metric result:
+==40939== Profiling application: ./sobel_gpu 4096 1024
+==40939== Profiling result:
+==40939== Metric result:
 Invocations                               Metric Name                        Metric Description         Min         Max         Avg
 Device "Tesla V100-SXM2-16GB (0)"
     Kernel: sobel_kernel_gpu(float*, float*, int, int, int, float*, float*)
-          1                             sm_efficiency                   Multiprocessor Activity      98.29%      98.29%      98.29%
+          1                             sm_efficiency                   Multiprocessor Activity      98.30%      98.30%      98.30%
   
   
   
 chrishuy@cgpu18:~/hw5/HPC5> 
+
