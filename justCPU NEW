@@ -1,0 +1,53 @@
+chrishuy@cgpu18:~/hw5/HPC5> cat outputNEWW.txt
+usingThreads
+1
+ Read data from the file ./data/zebra-gray-int8-4x 
+ Elapsed time is : 1.19265 
+ Wrote the output file ./data/sobel_cpu_result.dat 
+usingThreads
+2
+ Read data from the file ./data/zebra-gray-int8-4x 
+ Elapsed time is : 0.604638 
+ Wrote the output file ./data/sobel_cpu_result.dat 
+usingThreads
+4
+ Read data from the file ./data/zebra-gray-int8-4x 
+ Elapsed time is : 0.306517 
+ Wrote the output file ./data/sobel_cpu_result.dat 
+usingThreads
+8
+ Read data from the file ./data/zebra-gray-int8-4x 
+ Elapsed time is : 0.26368 
+ Wrote the output file ./data/sobel_cpu_result.dat 
+usingThreads
+16
+ Read data from the file ./data/zebra-gray-int8-4x 
+ Elapsed time is : 0.308707 
+ Wrote the output file ./data/sobel_cpu_result.dat 
+usingThreads
+1
+ Read data from the file ./data/zebra-gray-int8-4x 
+ Elapsed time is : 1.19464 
+ Wrote the output file ./data/sobel_cpu_result.dat 
+usingThreads
+2
+ Read data from the file ./data/zebra-gray-int8-4x 
+ Elapsed time is : 0.606848 
+ Wrote the output file ./data/sobel_cpu_result.dat 
+usingThreads
+4
+ Read data from the file ./data/zebra-gray-int8-4x 
+ Elapsed time is : 0.303877 
+ Wrote the output file ./data/sobel_cpu_result.dat 
+usingThreads
+8
+ Read data from the file ./data/zebra-gray-int8-4x 
+ Elapsed time is : 0.268178 
+ Wrote the output file ./data/sobel_cpu_result.dat 
+usingThreads
+16
+ Read data from the file ./data/zebra-gray-int8-4x 
+ Elapsed time is : 0.356007 
+ Wrote the output file ./data/sobel_cpu_result.dat 
+chrishuy@cgpu18:~/hw5/HPC5> 
+
