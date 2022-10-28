@@ -95,19 +95,31 @@ do_sobel_filtering(float *in, float *out, int ncols, int nrows)
 
 // ADD CODE HERE: you will need to add one more item to this line to map the "out" data array such that 
 // it is returned from the the device after the computation is complete. everything else here is input.
-#pragma omp target data map(to:in[0:nvals]) map(to:width) map(to:height) map(to:Gx[0:9]) map(to:Gy[0:9]) map(tofrom:out[0:nvals])
+#pragma omp target data map(to:in[0:nvals]) map(to:width) map(to:height) map(to:Gx[0:9]) map(to:Gy[0:9]) map(to:out[0:nvals])
    {
 
    // ADD CODE HERE: insert your code here that iterates over every (i,j) of input,  makes a call
    // to sobel_filtered_pixel, and assigns the resulting value at location (i,j) in the output.
-#pragma omp target teams distribute parallel for collapse(2)
-     for (int c=1; c< width-1; c++) {
+
+
+
+   #pragma omp target teams distribute parallel for collapse(2)
+   for (int c=1; c< width-1; c++) {
       for (int r=1; r<height-1; r++) {
-         int i = (r*width) + c;
-         float s[] = { in[i-width-1] , in[i-width], in[i-width+1] , in[i-1], in[i], in[i+1], in[i+width-1], in[i+width], in[i+width+1] };
-         out[i] = sobel_filtered_pixel(s, 5, 5, width, height, Gx, Gy);
+         int i = (r*width) + c; 
+         out[i] = sobel_filtered_pixel(in, i, 0, width, height, Gx, Gy);
       }
    }
+
+
+// #pragma omp target teams distribute parallel for collapse(2)
+//      for (int c=1; c< width-1; c++) {
+//       for (int r=1; r<height-1; r++) {
+//          int i = (r*width) + c;
+//          float s[] = { in[i-width-1] , in[i-width], in[i-width+1] , in[i-1], in[i], in[i+1], in[i+width-1], in[i+width], in[i+width+1] };
+//          out[i] = sobel_filtered_pixel(s, 5, 5, width, height, Gx, Gy);
+//       }
+//    }
    
    // don't forget to include a  #pragma omp target teams parallel for around those loop(s).
    // You may also wish to consider additional clauses that might be appropriate here to increase parallelism 

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/global/homes/c/chrishuy/hw5/HPC5/sobel_gpu.cu" "CMakeFiles/sobel_gpu.dir/sobel_gpu.cu.o" "gcc" "CMakeFiles/sobel_gpu.dir/sobel_gpu.cu.o.d"
+  "/home/chris/Desktop/HPC5/sobel_gpu.cu" "CMakeFiles/sobel_gpu.dir/sobel_gpu.cu.o" "gcc" "CMakeFiles/sobel_gpu.dir/sobel_gpu.cu.o.d"
   )
 
 # Targets to which this target links.

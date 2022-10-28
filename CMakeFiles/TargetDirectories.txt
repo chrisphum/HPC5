@@ -1,5 +1,5 @@
-/global/homes/c/chrishuy/hw5/HPC5/CMakeFiles/sobel_cpu.dir
-/global/homes/c/chrishuy/hw5/HPC5/CMakeFiles/sobel_cpu_omp_offload.dir
-/global/homes/c/chrishuy/hw5/HPC5/CMakeFiles/sobel_gpu.dir
-/global/homes/c/chrishuy/hw5/HPC5/CMakeFiles/edit_cache.dir
-/global/homes/c/chrishuy/hw5/HPC5/CMakeFiles/rebuild_cache.dir
+/home/chris/Desktop/HPC5/CMakeFiles/sobel_cpu.dir
+/home/chris/Desktop/HPC5/CMakeFiles/sobel_cpu_omp_offload.dir
+/home/chris/Desktop/HPC5/CMakeFiles/sobel_gpu.dir
+/home/chris/Desktop/HPC5/CMakeFiles/edit_cache.dir
+/home/chris/Desktop/HPC5/CMakeFiles/rebuild_cache.dir

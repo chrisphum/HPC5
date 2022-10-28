@@ -44,14 +44,32 @@ char output_fname[] = "./data/sobel_cpu_result.dat";
 float
 sobel_filtered_pixel(float *s, int i, int j , int ncols, int nrows, float *gx, float *gy)
 {
-   float t = 0.0;
-   float x = 0.0;
-   float y = 0.0;
+      // float s[] = {(i-ncols-1)   >= 0 ? in[i-ncols-1]  : 0.0f,
+      //             (i-ncols)     >= 0 ? in[i-ncols]    : 0.0f,
+      //             (i-ncols+1)   >= 0 ? in[i-ncols+1]  : 0.0f,
+      //             (i-1)         >= 0 ? in[i-1]        : 0.0f,
+      //             (i)           >= 0 ? in[i]          : 0.0f,
+      //             (i+1)         < n-1  ? in[i+1]        : 0.0f,
+      //             (i+ncols-1)   < n-1  ? in[i+ncols-1]  : 0.0f,
+      //             (i+ncols)     < n-1  ? in[i+ncols]    : 0.0f,
+      //             (i+ncols+1)   < n-1 ? in[i+ncols+1]  : 0.0f };
 
-   for (int k = 0; k < 9; k++) {
-      x += gx[k]*s[k];
-      y += gy[k]*s[k];
-   }
+      float t = 0.0;
+      float x = 0.0;
+      float y = 0.0;
+      int index;
+
+      // The for loop is equivalent to the patten or i-ncols-1 .... seen above
+      int k = 0;
+      for (int m = -1; m<2; m++) {
+         for (int n=-1; n<2; n++) {
+            index = (i+(m*ncols)+n);
+            x += gx[k]*s[index];
+            y += gy[k]*s[index];
+            k++;
+         }
+      }
+
    x = abs(x);
    y = abs(y);
 
@@ -79,30 +97,11 @@ do_sobel_filtering(float *in, float *out, int ncols, int nrows)
    float Gx[] = {1.0, 0.0, -1.0, 2.0, 0.0, -2.0, 1.0, 0.0, -1.0};
    float Gy[] = {1.0, 2.0, 1.0, 0.0, 0.0, 0.0, -1.0, -2.0, -1.0};
 
-   // ADD CODE HERE: insert your code here that iterates over every (i,j) of input,  makes a call
-   // to sobel_filtered_pixel, and assigns the resulting value at location (i,j) in the output.
-
-
-   // for (int i=(ncols+1); i<((ncols*nrows) - ncols -1); i++) {
-   //    float s[] = { in[i-ncols-1] , in[i-ncols], in[i-ncols+1] , in[i-1], in[i], in[i+1], in[i+ncols-1], in[i+ncols], in[i+ncols+1] };
-   //    out[i] = sobel_filtered_pixel(s, 5, 5, ncols, nrows, Gx, Gy);
-   // }
-  #pragma omp parallel for collapse(2)
-   for (int c=0; c< ncols; c++) {
-      for (int r=0; r<nrows; r++) {
-         int i = (r*ncols) + c;
-         
-         float s[] = { (i-ncols-1)   >= 0 ? in[i-ncols-1]  : 0.0f,
-                        (i-ncols)     >= 0 ? in[i-ncols]    : 0.0f,
-                        (i-ncols+1)   >= 0 ? in[i-ncols+1]  : 0.0f,
-                        (i-1)         >= 0 ? in[i-1]        : 0.0f,
-                        (i)           >= 0 ? in[i]          : 0.0f,
-                        (i+1)         < n-1  ? in[i+1]        : 0.0f,
-                        (i+ncols-1)   < n-1  ? in[i+ncols-1]  : 0.0f,
-                        (i+ncols)     < n-1  ? in[i+ncols]    : 0.0f,
-                        (i+ncols+1)   < n-1 ? in[i+ncols+1]  : 0.0f };
- 
-         out[i] = sobel_filtered_pixel(s, 5, 5, ncols, nrows, Gx, Gy);
+   #pragma omp parallel for collapse(2)
+   for (int c=1; c< ncols-1; c++) {
+      for (int r=1; r<nrows-1; r++) {
+         int i = (r*ncols) + c; 
+         out[i] = sobel_filtered_pixel(in, i, 0, ncols, nrows, Gx, Gy);
       }
    }
 }

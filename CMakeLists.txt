@@ -8,10 +8,10 @@ target_compile_options(sobel_cpu PRIVATE -fopenmp -march=native)
 target_link_options(sobel_cpu PRIVATE -fopenmp)
 
 add_executable(sobel_cpu_omp_offload sobel_cpu_omp_offload.cpp)
-target_compile_options(sobel_cpu_omp_offload PRIVATE -Ofast -fopenmp -fopenmp-targets=nvptx64-nvidia-cuda)
-target_link_options(sobel_cpu_omp_offload PRIVATE -Ofast -fopenmp -fopenmp-targets=nvptx64-nvidia-cuda )
-# target_compile_options(sobel_cpu_omp_offload PRIVATE -Ofast -fopenmp)
-# target_link_options(sobel_cpu_omp_offload PRIVATE -Ofast -fopenmp)
+#target_compile_options(sobel_cpu_omp_offload PRIVATE -Ofast -fopenmp -fopenmp-targets=nvptx64-nvidia-cuda)
+#target_link_options(sobel_cpu_omp_offload PRIVATE -Ofast -fopenmp -fopenmp-targets=nvptx64-nvidia-cuda )
+ target_compile_options(sobel_cpu_omp_offload PRIVATE -Ofast -fopenmp)
+ target_link_options(sobel_cpu_omp_offload PRIVATE -Ofast -fopenmp)
 
 
 add_executable(sobel_gpu sobel_gpu.cu)
